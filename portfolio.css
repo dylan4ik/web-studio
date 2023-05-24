@@ -28,7 +28,7 @@ ul {
 
 .header-page {
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
@@ -39,7 +39,7 @@ ul {
 
 .link-contact {
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
 }
@@ -50,7 +50,7 @@ ul {
 
 .button-element {
     font-size: 16px;
-    line-height: 1,62;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -63,7 +63,7 @@ ul {
 
 .button-element:hover {
     font-size: 16px;
-    line-height: 1,62;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: #FFFFFF;
@@ -85,7 +85,7 @@ ul {
 .poster-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1,87;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
 }
@@ -98,7 +98,7 @@ footer {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
 
@@ -111,7 +111,7 @@ footer {
 .footer-address {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     font-style: normal;
@@ -120,7 +120,7 @@ footer {
 .footer-link {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
