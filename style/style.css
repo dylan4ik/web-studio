@@ -166,3 +166,21 @@ footer {
 
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: #f32121;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.decision{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
