@@ -26,6 +26,11 @@ ul {
     color: #000;
 }
 
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 .header-page {
     font-size: 14px;
     line-height: 1.14;
@@ -35,6 +40,11 @@ ul {
 
 .header-page:hover {
     color: #2196F3;
+}
+
+main {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .link-contact {
@@ -91,6 +101,8 @@ ul {
 }
 
 footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color:#2F303A ;
 }
 
@@ -126,3 +138,21 @@ footer {
 
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline:solid #f32121;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.decision{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}

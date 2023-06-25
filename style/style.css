@@ -50,6 +50,12 @@ ul {
     color: #2196F3;
 }
 
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #212121;
+}
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -73,6 +79,12 @@ ul {
     height: 50px;   
 }
 
+.business {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
 .business-title {
     font-weight: 700;
     font-size: 14px;
@@ -91,6 +103,10 @@ ul {
     color: #757575;
 }
 
+.helpers {
+    padding-bottom: 94px;
+}
+
 .helpers-title {
     font-weight: 700;
     font-size: 36px;
@@ -99,6 +115,11 @@ ul {
     letter-spacing: 0.03em;
     color: #212121;
 
+}
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-title {
@@ -131,6 +152,8 @@ ul {
 }
 
 footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color:#2F303A ;
 }
 
@@ -170,7 +193,7 @@ footer {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: #f32121;
+    outline:solid #f32121;
     margin-left: auto;
     margin-right: auto;
 }
