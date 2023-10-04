@@ -1,6 +1,6 @@
 body {
-    font-family: 'Roboto';  
-    
+    font-family: 'Roboto';
+
 }
 
 
@@ -13,7 +13,7 @@ body {
     color: #2196F3;
 
 }
- 
+
 a {
     text-decoration: none;
 }
@@ -25,6 +25,27 @@ ul {
 .logo2 {
     color: #000;
 }
+
+.header-nav {
+    display: flex;
+    gap: 93px;
+    align-items: center;
+
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 50px;
+}
+
 
 .header-page {
     font-weight: 500;
@@ -80,8 +101,8 @@ ul {
     width: 216px;
     height: 50px;
     display: block;
-    margin-left:auto ;
-    margin-right:auto ;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .business {
@@ -96,6 +117,7 @@ ul {
 }
 
 
+
 .business-title {
     font-weight: 700;
     font-size: 14px;
@@ -103,6 +125,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+    margin: 10px;
 }
 
 .business-text {
@@ -172,7 +195,7 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-    
+
 }
 
 .team-list-item {
@@ -182,7 +205,7 @@ ul {
 footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color:#2F303A ;
+    background-color: #2F303A;
 }
 
 .footer-logo {
@@ -221,18 +244,17 @@ footer {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline:solid #f32121;
+    outline: solid #f32121;
     margin-left: auto;
     margin-right: auto;
 }
 
-header{
+header {
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
-.decision{
+.decision {
     padding-top: 200px;
     padding-bottom: 200px;
 }
-
