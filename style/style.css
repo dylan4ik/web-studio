@@ -86,8 +86,9 @@ ul {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #212121;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -125,7 +126,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .business-text {
@@ -199,7 +200,7 @@ ul {
 }
 
 .team-list-item {
-    padding-bottom: 94px;
+    padding-bottom: 30px;
 }
 
 footer {
@@ -215,6 +216,8 @@ footer {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
+    display: block;
+    margin-bottom: 20px;
 
 }
 
@@ -229,6 +232,7 @@ footer {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     font-style: normal;
+    margin-bottom: 9px;
 }
 
 .footer-link {
@@ -237,6 +241,13 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 
 }
 
