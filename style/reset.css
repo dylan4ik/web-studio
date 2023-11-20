@@ -8,10 +8,6 @@ h1,h2,h3,p{
     margin: 0;
 }
 
-section{
-    outline: solid green;
-}
-
 img {
     display: block;
     width: 100%;
