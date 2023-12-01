@@ -34,9 +34,12 @@ ul {
     color: #000;
 }
 
+
+
 header{
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom:solid #ECECEC;
 }
 
 .header-nav {
@@ -71,6 +74,8 @@ header{
 .header-page:hover {
     color: #2196F3;
 }
+
+
 
 .link-contact {
     font-weight: 500;
