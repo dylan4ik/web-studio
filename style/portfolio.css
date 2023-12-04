@@ -39,23 +39,7 @@ ul {
 header{
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom:solid #ECECEC;
-}
-
-.header-nav {
-    display: flex;
-    gap: 93px;
-    align-items: center;
-
-}
-
-.header-list {
-    display: flex;
-    gap: 50px;
-
-}
-
-.header-contacts {
+    border-bottom:solid #ECECEC; ЛО.header-contacts {
     display: flex;
     margin-left: auto;
     align-items: center;
