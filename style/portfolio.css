@@ -20,10 +20,12 @@ body {
     letter-spacing: 0.03em;
     color: #2196F3;
 
+
 }
 
 a {
     text-decoration: none;
+
 }
 
 ul {
@@ -31,15 +33,23 @@ ul {
 }
 
 .logo2 {
-    color: #000;
+    color: #000000;
+
 }
 
+.header-nav {
+    display: flex;
+    gap: 93px;
+    align-items: center;
+    padding-top: 34px;
 
+}
 
-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: solid #ECECEC;
+.header-list {
+    display: flex;
+    gap: 50px;
+    
+
 }
 
 .header-contacts {
@@ -47,22 +57,20 @@ header {
     margin-left: auto;
     align-items: center;
     gap: 50px;
-
 }
+
 
 .header-page {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #000000;
 }
 
 .header-page:hover {
     color: #2196F3;
 }
-
-
 
 .link-contact {
     font-weight: 500;
