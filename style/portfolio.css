@@ -21,7 +21,7 @@ body {
     color: #2196F3;
 
 }
- 
+
 a {
     text-decoration: none;
 }
@@ -36,16 +36,19 @@ ul {
 
 
 
-header{
+header {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom:solid #ECECEC; ЛО.header-contacts {
+    border-bottom: solid #ECECEC;
+}
+
+.header-contacts {
     display: flex;
     margin-left: auto;
     align-items: center;
     gap: 50px;
-}
 
+}
 
 .header-page {
     font-weight: 500;
@@ -201,8 +204,3 @@ footer {
     gap: 9px;
 
 }
-
-
-
-
-
