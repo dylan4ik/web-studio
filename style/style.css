@@ -83,6 +83,27 @@ ul {
     color: #2196F3;
 }
 
+.email-contact {
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+
+}
+
+.email-contact:hover {
+    fill: #2196F3;
+}
+
+.phone-contact {
+    width: 10px;
+    height: 16px;
+    fill: #757575;
+}
+
+.phone-contact:hover {
+    fill: #2196F3;
+}
+
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -246,6 +267,14 @@ ul {
 
 }
 
+.team-icon {
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+
 .team-list-item {
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
@@ -283,6 +312,17 @@ ul {
     border-radius: 4px;
     border: 1px solid #AFB1B8;
     display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.clients-style {
+    fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
 }
 
 footer {
