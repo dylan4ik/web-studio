@@ -60,7 +60,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-button" type="button">Замовити послугу</button>
+        <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
 
       </div>
     </section>
@@ -321,10 +321,10 @@
       </div>
     </div>
   </footer>
-  <div class="backdrop">
+  <div class="backdrop is-hidden" data-modal >
     <div class="modal">
       <form action="">
-        <div class="cross-box">
+        <div class="cross-box" data-modal-close>
           <svg class="modal-cross">
             <use class="modal-cross-svg" href="./images/icons.svg#icon-cross"></use>
           </svg>
@@ -358,12 +358,16 @@
           </li>
         </ul>
         <div class="rules-box">
+          <svg class="modal-check">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
           <h4 class="rules-title">Погоджуюся з розсилкою та приймаю <span class="rules-site">Умови договору</span></h4>
         </div>
         <button class="modal-button" type="submit">Відправити</button>
       </form>
     </div>
   </div>
+  <script src="./modal.js" type="module"></script>
 </body>
 
 </html>
