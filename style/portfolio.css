@@ -48,7 +48,7 @@ ul {
 .header-list {
     display: flex;
     gap: 50px;
-    
+
 
 }
 
@@ -81,8 +81,14 @@ ul {
     background-color: #2196F3;
     width: 100%;
     height: 3px;
-    
+    opacity: 0;
 
+
+
+}
+
+.header-page:hover::after {
+    opacity: 1;
 }
 
 .link-contact {
@@ -108,7 +114,14 @@ main {
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 50px;
+    position: relative;
 
+}
+
+.poster-item {
+    border: #EEEEEE;
+    
+    
 }
 
 .poster-square {
@@ -120,8 +133,16 @@ main {
     opacity: 1;
 }
 
-.poster-text {
-    fill: #FFF;
+.poster-message {
+    color: #FFFFFF;
+    padding-bottom: 63px;
+    height: 168px;
+    width: 322px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: #fff;
 }
 
 .overlay {
@@ -135,7 +156,8 @@ main {
     bottom: 0;
     background-color: #2196F3;
     opacity: 0;
-    
+
+
 }
 
 .button-list {
@@ -181,6 +203,7 @@ main {
 .button-list {
     display: flex;
     gap: 24px;
+    
 }
 
 .poster-item:hover {
