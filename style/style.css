@@ -38,6 +38,11 @@ ul {
 
 }
 
+header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .header-nav {
     display: flex;
     gap: 93px;
@@ -497,10 +502,7 @@ footer {
 }
 
 
-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
+
 
 .decision {
     padding-top: 200px;
