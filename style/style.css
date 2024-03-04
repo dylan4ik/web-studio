@@ -77,7 +77,7 @@ header {
 .header-page:hover {
     color: #2196F3;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 }
 
 .header-page::after {
@@ -103,7 +103,7 @@ header {
 .link-contact:hover {
     color: #2196F3;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 }
 
 .email-contact {
@@ -127,7 +127,7 @@ header {
 .phone-contact:hover {
     fill: #2196F3;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 }
 
 .hero {
@@ -154,6 +154,25 @@ header {
     margin-right: auto;
     margin-bottom: 30px;
     width: 696px;
+    animation-name: hero-title-welcomes;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes hero-title-welcomes {
+    0% {
+        transform: translate(1500px, 0);
+        opacity: 0;
+    }
+
+    50% {
+        text-shadow: 10px 50px 1px rgb(43, 226, 156);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
 }
 
 .hero-button {
@@ -725,7 +744,7 @@ input::placeholder {
     line-height: 24px;
     letter-spacing: 0.42px;
     text-decoration-line: underline;
-    
+
 
 }
 
