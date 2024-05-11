@@ -72,6 +72,7 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #000000;
+    
 }
 
 .header-page:hover {
@@ -88,8 +89,13 @@ header {
     background-color: #2196F3;
     width: 100%;
     height: 3px;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
 
+.header-page:hover::after {
+    opacity: 1;
 }
 
 .link-contact {
@@ -98,11 +104,12 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .link-contact:hover {
     color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
 
 }
 
@@ -110,23 +117,24 @@ header {
     width: 16px;
     height: 12px;
     fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 }
 
 .email-contact:hover {
     fill: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .phone-contact {
     width: 10px;
     height: 16px;
     fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .phone-contact:hover {
     fill: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -366,11 +374,12 @@ header {
 
 .team-icon-svg {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .team-icon-svg:hover {
     fill: #FFFFFF;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .team-svg-link:hover {
@@ -417,11 +426,12 @@ header {
     padding-bottom: 16px;
     padding-right: 32px;
     padding-left: 32px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .cleints-list-item:hover {
     border: 1px solid #2196F3;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .cleints-list-item:focus {
@@ -434,11 +444,11 @@ header {
     width: 106px;
     height: 60px;
     flex-shrink: 0;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .clients-style:hover {
     fill: #2196F3;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: skew(8deg, 8deg);
 }
 
@@ -589,6 +599,10 @@ footer {
 
 }
 
+.modal-cross:hover {
+    fill: #188CE8;
+}
+
 .is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -598,8 +612,14 @@ footer {
 .modal-input {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
+    padding-left: 44px;
 
 }
+
+.modal-input:hover {
+    fill: #188CE8;
+}
+
 
 .modal-input4 {
     width: 448px;
@@ -658,6 +678,11 @@ footer {
 
 }
 
+.modal-icon:hover {
+    fill:#188CE8;
+}
+
+
 .modal-check {
     border-radius: 3px;
     border: 2px solid #212121;
@@ -694,6 +719,7 @@ footer {
     margin-right: auto;
     margin-bottom: 40px;
     margin-top: 30px;
+    border: none;
 
 
 }
@@ -708,6 +734,8 @@ input {
     padding-bottom: 16px;
 
 }
+
+
 
 input::placeholder {
     color: rgba(117, 117, 117, 0.50);
