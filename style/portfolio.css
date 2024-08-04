@@ -37,18 +37,22 @@ ul {
 
 }
 
+header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .header-nav {
     display: flex;
     gap: 93px;
     align-items: center;
-    padding-top: 34px;
+
 
 }
 
 .header-list {
     display: flex;
     gap: 50px;
-
 
 }
 
@@ -57,7 +61,6 @@ ul {
     margin-left: auto;
     align-items: center;
     gap: 50px;
-    
 }
 
 
@@ -68,11 +71,13 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #000000;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-page:hover {
     color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-page::after {
@@ -84,8 +89,7 @@ ul {
     width: 100%;
     height: 3px;
     opacity: 0;
-
-
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -99,11 +103,37 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .link-contact:hover {
     color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+
+}
+
+.email-contact {
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.email-contact:hover {
+    fill: #2196F3;
+
+}
+
+.phone-contact {
+    width: 10px;
+    height: 16px;
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.phone-contact:hover {
+    fill: #2196F3;
+
 }
 
 
@@ -121,14 +151,10 @@ main {
 
 }
 
-.poster-item {
-    border: #EEEEEE;
-
-
-}
 
 .poster-square {
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -160,7 +186,7 @@ main {
     bottom: 0;
     background-color: #2196F3;
     opacity: 0;
-    transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
@@ -273,17 +299,12 @@ footer {
 
 }
 
-.footer-svgg {
-    fill: #FFFFFF;
-    width: 20px;
-    height: 20px;
-
-}
 
 .footer-icon {
     width: 20px;
     height: 20px;
-    margin-left: 34px;
+    
+
 
 }
 
@@ -293,7 +314,28 @@ footer {
 
     padding-top: 28px;
     padding-bottom: 42px;
+    fill: #FFFFFF;
+    /* width: 20px;
+    height: 20px */;
+    margin-bottom: 114px;
+    
+    
 
+}
+
+.footer-icon-svg {
+    margin-right: 34px;
+}
+
+.footer-svg-list {
+    padding:  15px 17px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.6s;
+}
+
+.footer-svg-list:hover {
+    background-color: #2196F3;
 }
 
 .footer-logo2 {
@@ -326,3 +368,59 @@ footer {
     gap: 9px;
 
 }
+/* Стилі для дуже великих екранів (дисплей 1200рх і більше). 
+Записуються без медіа-запитів, тому що контрольна точка не має верхньої межі. */ 
+ 
+/* Стилі для великих екранів (дисплей максимум 1199рх) */ 
+@media (max-width: 1199px) {
+ } 
+ 
+/* Стилі для середніх екранів (дисплей максимум 991рх) */ 
+    @media (max-width: 991px) {  
+        .header-list {
+            display: none;
+        }
+        .header-list.open {
+            display: block;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: aquamarine;
+            padding: 20px;
+        }
+        .header-contacts {
+            display: none;
+        }
+        .header-nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu {
+            display: block;
+            width: 20px;
+
+        }
+        .footer-svgg {
+         gap: 10px;
+        }
+        .footer-container {
+            flex-direction: column;
+        }
+        .footer-container__right {
+            padding-top: 25px;
+        }
+    } 
+ 
+/* Стилі для малих екранів (дисплей максимум 767рх) */ 
+    @media (max-width: 767px) {  
+
+        
+    }
+/* Стилі для дуже малих екранів (дисплей максимум 575рх) */ 
+    @media (max-width: 575px) {  
+
+
+    }

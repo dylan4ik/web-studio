@@ -1,5 +1,5 @@
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -28,6 +28,13 @@ a {
     text-decoration: none;
 
 }
+
+.menu {
+    display: none;
+    color: #188CE8;
+}
+
+
 
 ul {
     list-style: none;
@@ -72,12 +79,12 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #000000;
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-page:hover {
     color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -118,12 +125,11 @@ header {
     height: 12px;
     fill: #757575;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
-
 }
 
 .email-contact:hover {
     fill: #2196F3;
-    
+
 }
 
 .phone-contact {
@@ -210,6 +216,7 @@ header {
 .business-list {
     display: flex;
     gap: 30px;
+    
 
 }
 
@@ -223,6 +230,8 @@ header {
     margin-bottom: 10px;
 
 }
+
+
 
 .business-list-item::before {
     content: "";
@@ -262,12 +271,15 @@ header {
 
 .helpers-list {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
 }
 
 .helper-list-item {
     position: relative;
+    margin: 20px auto;
 
 
 }
@@ -314,6 +326,8 @@ header {
 
 .team-list {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
 }
@@ -362,6 +376,7 @@ header {
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    margin: 20px auto;
 }
 
 .team-svg {
@@ -379,7 +394,7 @@ header {
 
 .team-icon-svg:hover {
     fill: #FFFFFF;
-    
+
 }
 
 .team-svg-link:hover {
@@ -413,6 +428,8 @@ header {
 
 .cleints-list {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 30px;
 }
 
@@ -426,12 +443,13 @@ header {
     padding-bottom: 16px;
     padding-right: 32px;
     padding-left: 32px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 20px auto;
 }
 
 .cleints-list-item:hover {
     border: 1px solid #2196F3;
-    
+
 }
 
 .cleints-list-item:focus {
@@ -489,17 +507,12 @@ footer {
 
 }
 
-.footer-svgg {
-    fill: #FFFFFF;
-    width: 20px;
-    height: 20px;
-
-}
 
 .footer-icon {
     width: 20px;
     height: 20px;
-    margin-left: 34px;
+    
+
 
 }
 
@@ -509,7 +522,25 @@ footer {
 
     padding-top: 28px;
     padding-bottom: 42px;
+    fill: #FFFFFF;
+    margin-bottom: 114px;
 
+}
+
+.footer-icon-svg {
+    margin-right: 34px;
+}
+
+.footer-svg-list {
+    padding:  15px 17px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.6s;
+    
+}
+
+.footer-svg-list:hover {
+    background-color: #2196F3;
 }
 
 .footer-logo2 {
@@ -679,7 +710,7 @@ footer {
 }
 
 .modal-icon:hover {
-    fill:#188CE8;
+    fill: #188CE8;
 }
 
 
@@ -783,3 +814,123 @@ input::placeholder {
     display: flex;
     align-items: center;
 }
+
+/* Стилі для дуже великих екранів (дисплей 1200рх і більше). 
+Записуються без медіа-запитів, тому що контрольна точка не має верхньої межі. */ 
+ 
+/* Стилі для великих екранів (дисплей максимум 1199рх) */ 
+@media (max-width: 1199px) { 
+    .business-list-item {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.business-list {
+   flex-wrap: wrap;
+    
+}
+ } 
+ 
+/* Стилі для середніх екранів (дисплей максимум 991рх) */ 
+    @media (max-width: 991px) {  
+        .header-list {
+            display: none;
+        }
+        .header-list.open {
+            display: block;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: aquamarine;
+            padding: 20px;
+        }
+        .header-contacts {
+            display: none;
+        }
+        .header-nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu {
+            display: block;
+            width: 20px;
+
+        }
+        .footer-svgg {
+         gap: 10px;
+        }
+        .footer-container {
+            flex-direction: column;
+        }
+        .footer-container__right {
+            padding-top: 25px;
+        }
+    } 
+ 
+/* Стилі для малих екранів (дисплей максимум 767рх) */ 
+    @media (max-width: 767px) {  
+        .hero-title {
+            max-width: 400px;
+            font-size: 34px;
+        }
+        
+    }
+/* Стилі для дуже малих екранів (дисплей максимум 575рх) */ 
+    @media (max-width: 575px) {  
+        .hero-title {
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 1.36;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            width: 100%;
+            animation-name: hero-title-welcomes;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+        }
+        .helpers-text {
+            position: absolute;
+            top: 150px;
+            left: 0px;
+            bottom: 0px;
+            color: #FFF;
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+            background-color: rgba(47, 48, 58, 0.80);
+            width: 100%;
+            height: 70px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .modal {
+            max-width: 528px;
+            
+        }
+        .modal-input {
+            padding-left: 14px;
+        }
+        .modal-input4 {
+            width: 100%;
+        }
+
+    }
