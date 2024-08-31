@@ -206,6 +206,22 @@ header {
 }
 
 
+.rotate-bottom:hover {
+	animation: rotate-bottom 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 5ms alternate-reverse both;
+}
+ @keyframes rotate-bottom {
+    0% {
+      transform: rotate(0);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: rotate(360deg);
+      transform-origin: bottom;
+    }
+  }
+  
+
+
 
 .business {
     padding-top: 94px;
